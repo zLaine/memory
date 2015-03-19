@@ -143,4 +143,5 @@ window.onload = function()
         game.debug.cameraInfo(game.camera, 32, 32);
         game.debug.spriteCoords(girl, 32, 500);
     } 
+}
 };
