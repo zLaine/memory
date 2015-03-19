@@ -12,6 +12,7 @@ window.onload = function()
     var tiles;
     var background;
     var walls;
+    var boxes;
     var collision;
     
     function preload() 
@@ -36,7 +37,7 @@ window.onload = function()
     //    map2 = game.add.tilemap('map');
     //    map3 = game.add.tilemap('map');
         map.addTilesetImage('apartment', 'apartment');
-        map.addTilesetImage('bw boxes', 'bw boxes');
+        map.addTilesetImage('bw boxes', 'boxes');
     //    map3.addTilesetImage('Brick', 'brick');
         
        /* map.setCollisionBetween(0, 8);
