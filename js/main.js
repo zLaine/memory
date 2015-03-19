@@ -22,7 +22,7 @@ window.onload = function()
         game.load.image('apartment', 'assets/apartment.png');
         game.load.tilemap('map', 'assets/floorPlan.json', null, Phaser.Tilemap.TILED_JSON);
         
-        game.load.audio('reunited', 'assets/Reunited1.mp3');
+        game.load.audio('reunited', 'assets/Reunited.mp3');
     }
     
     
