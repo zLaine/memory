@@ -34,7 +34,7 @@ window.onload = function()
         
         //setting up the images used in the tilemap
         map = game.add.tilemap('map');
-    //    map2 = game.add.tilemap('map');
+        map2 = game.add.tilemap('map');
     //    map3 = game.add.tilemap('map');
         map.addTilesetImage('apartment', 'apartment');
         map.addTilesetImage('bw boxes', 'boxes');
