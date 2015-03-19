@@ -61,10 +61,7 @@ window.onload = function()
         reunited = game.add.audio('reunited');
         reunited.loop = true;
         reunited.play();
-        
-    //    game.add.sprite(0,0, 'foggySky');
-    //    game.stage.backgroundColor = '#2d2d2d';
-        
+
         
         girl = game.add.sprite(32, game.world.height - 50, 'girlChar');
         game.physics.arcade.enable(girl);
@@ -75,13 +72,8 @@ window.onload = function()
         girl.animations.add('down', [3, 4, 5], 10, true);
         girl.animations.add('up', [6, 7, 8], 10, true);
         girl.animations.add('right', [9, 10, 11], 10, true); 
-        
-       // walkRight.onStart.add(animationStarted, this);
-       // walkRight.onLoop.add(animationLooped, this);
-       //girl.animations.play('right', 10, true);
 
-      //  girl.body.gravity.y = 300;
-       // cursors = game.input.keyboard.createCursorKeys();
+
        game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
         
         girl.anchor.setTo(.5, .5);
