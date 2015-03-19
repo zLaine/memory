@@ -65,6 +65,8 @@ window.onload = function()
         
         girl = game.add.sprite(32, game.world.height - 50, 'girlChar');
         game.physics.arcade.enable(girl);
+        girl.body.bounce.y = 0;
+        girl.body.gravity.y = 0;
         girl.body.collideWorldBounds = true;
         //girl.scale.set(2);
         
@@ -74,7 +76,7 @@ window.onload = function()
         girl.animations.add('right', [9, 10, 11], 10, true); 
 
 
-       game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
+        game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
         
         girl.anchor.setTo(.5, .5);
         game.camera.follow(girl);
