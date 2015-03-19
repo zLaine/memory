@@ -67,6 +67,7 @@ window.onload = function()
         game.physics.arcade.enable(girl);
         girl.body.bounce.y = 0;
         girl.body.gravity.y = 0;
+        girl.body.velocity.x = 0;
         girl.body.collideWorldBounds = true;
         //girl.scale.set(2);
         
