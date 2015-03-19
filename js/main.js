@@ -38,7 +38,8 @@ window.onload = function()
     //    map3 = game.add.tilemap('map');
         map.addTilesetImage('apartment', 'apartment');
         map.addTilesetImage('bw boxes', 'boxes');
-    //    map3.addTilesetImage('Brick', 'brick');
+        map2.addTilesetImage('apartment', 'apartment');
+        map2.addTilesetImage('bw boxes', 'boxes');
         
        /* map.setCollisionBetween(0, 8);
         map.setCollisionBetween(20, 25);
@@ -48,7 +49,7 @@ window.onload = function()
         //sets up the layers of the filemap
         background = map.createLayer('Background');
         background.resizeWorld();
-        walls = map.createLayer('collision');
+        walls = map2.createLayer('Collision');
         //This debug code makes the colliders green
     //    platforms.debug = true;
         walls.resizeWorld();
