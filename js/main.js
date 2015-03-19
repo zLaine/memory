@@ -57,7 +57,7 @@ window.onload = function()
     //    collision.resizeWorld(); */
         
         //sets the platforms layer too all be colliders
-        map.setCollisionBetween(1, 1200, true, 'walls');
+        map2.setCollisionBetween(1, 1200, true, 'walls');
         
         reunited = game.add.audio('reunited');
         reunited.loop = true;
