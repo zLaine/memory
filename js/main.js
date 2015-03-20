@@ -56,7 +56,7 @@ window.onload = function()
     //    collision.resizeWorld(); */
         
         //sets the platforms layer to all be colliders
-        map2.setCollisionBetween(0, 1, true, 'walls');
+        map2.setCollisionBetween(0, 2, true, 'Walls');
         
         reunited = game.add.audio('reunited');
         reunited.loop = true;
@@ -93,7 +93,7 @@ window.onload = function()
         game.physics.arcade.collide(girl, walls);
         
         // girl.body.gravity.y = 300; 
-        //girl.body.velocity.x = 0;
+        girl.body.velocity.x = 0;
          
          
         if(game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
