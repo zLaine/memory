@@ -60,7 +60,7 @@ window.onload = function()
         
         reunited = game.add.audio('reunited');
         reunited.loop = true;
-        reunited.play();
+    //    reunited.play();
 
         
         girl = game.add.sprite(32, game.world.height - 50, 'girlChar');
@@ -112,13 +112,13 @@ window.onload = function()
         else if(game.input.keyboard.isDown(Phaser.Keyboard.UP))
         {
             //  Move down
-            girl.y = walkSpeed;
+            girl.y++;
             girl.animations.play('down');
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
         {
             //  Move up
-            girl.y = (0 - walkSpeed);
+            girl.y--;
             girl.animations.play('up');
         }
         else
