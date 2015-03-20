@@ -111,15 +111,15 @@ window.onload = function()
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.UP))
         {
-            //  Move to the right
+            //  Move down
             girl.body.velocity.y = walkSpeed;
-            girl.animations.play('up');
+            girl.animations.play('down');
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
         {
-            //  Move to the right
+            //  Move up
             girl.body.velocity.y = (0 - walkSpeed);
-            girl.animations.play('down');
+            girl.animations.play('up');
         }
         else
         {
