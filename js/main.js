@@ -78,6 +78,8 @@ window.onload = function()
 
 
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
+        game.input.keyboard.addKeyCapture([Phaser.Keyboard.UP]);
+        game.input.keyboard.addKeyCapture([Phaser.Keyboard.DOWN]);
         
         girl.anchor.setTo(.5, .5);
         game.camera.follow(girl);
