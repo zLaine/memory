@@ -112,13 +112,13 @@ window.onload = function()
         else if(game.input.keyboard.isDown(Phaser.Keyboard.UP))
         {
             //  Move down
-            girl.body.velocity.y = walkSpeed;
+            girl.y = walkSpeed;
             girl.animations.play('down');
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
         {
             //  Move up
-            girl.body.velocity.y = (0 - walkSpeed);
+            girl.y = (0 - walkSpeed);
             girl.animations.play('up');
         }
         else
