@@ -106,7 +106,7 @@ window.onload = function()
         else if(game.input.keyboard.isDown(Phaser.Keyboard.RIGHT))
         {
             //  Move to the right
-            girl.x++;
+            girl.x+=2;
             girl.animations.play('right');
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.UP))
@@ -118,7 +118,7 @@ window.onload = function()
         else if(game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
         {
             //  Move up
-            girl.y++;
+            girl.y+=2;
             girl.animations.play('down');
         }
         else
