@@ -61,7 +61,7 @@ window.onload = function()
     //    reunited.play();
 
         
-        girl = game.add.sprite(50, 50, 'girlChar');
+        girl = game.add.sprite(200, 50, 'girlChar');
         game.physics.arcade.enable(girl);
         girl.body.bounce.y = 0;
         girl.body.gravity.y = 0;
