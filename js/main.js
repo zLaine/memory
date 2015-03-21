@@ -52,7 +52,7 @@ window.onload = function()
         walls.resizeWorld();
 
         //sets the platforms layer to all be colliders
-        walls.setCollisionBetween(0, 1, true, 'Walls');
+        map2.setCollisionBetween(0, 1, true, 'Walls');
         background = map.createLayer('Background');
         background.resizeWorld();
         
@@ -99,26 +99,26 @@ window.onload = function()
         if(game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
          {
         //  Move to the left
-             girl.x-=3;
+             girl.body.velocity.x = (0 - walkSpeed);
              girl.animations.play('left');
              
          }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.RIGHT))
         {
             //  Move to the right
-            girl.x+=3;
+            girl.body.velocity.x = walkSpeed;
             girl.animations.play('right');
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.UP))
         {
             //  Move up
-            girl.y-=3;
+            girl.body.velocity.y = (0 - walkSpeed);
             girl.animations.play('up');
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
         {
             //  Move down
-            girl.y+=3;
+            girl.body.velocity.y = walkSpeed;
             girl.animations.play('down');
         }
         else
