@@ -99,7 +99,7 @@ window.onload = function()
         if(game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
          {
         //  Move to the left
-             girl.x--;
+             girl.x-=3;
              girl.animations.play('left');
              
          }
@@ -111,13 +111,13 @@ window.onload = function()
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.UP))
         {
-            //  Move down
-            girl.y--;
+            //  Move up
+            girl.y-=3;
             girl.animations.play('up');
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
         {
-            //  Move up
+            //  Move down
             girl.y+=2;
             girl.animations.play('down');
         }
