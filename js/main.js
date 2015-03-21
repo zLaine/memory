@@ -52,7 +52,7 @@ window.onload = function()
         walls.resizeWorld();
 
         //sets the platforms layer to all be colliders
-        map2.setCollisionBetween(0, 1, true, 'Walls');
+        walls.setCollisionBetween(0, 1, true, 'Walls');
         background = map.createLayer('Background');
         background.resizeWorld();
         
