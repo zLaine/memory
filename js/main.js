@@ -99,14 +99,14 @@ window.onload = function()
         if(game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
          {
         //  Move to the left
-             girl.body.velocity.x = (0 - walkSpeed);
+             girl.x--;
              girl.animations.play('left');
              
          }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.RIGHT))
         {
             //  Move to the right
-            girl.body.velocity.x = walkSpeed;
+            girl.x++;
             girl.animations.play('right');
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.UP))
