@@ -48,7 +48,7 @@ window.onload = function()
         //sets up the layers of the filemap
         walls = map2.createLayer('Walls');
         //This debug code makes the colliders green
-    //    platforms.debug = true;
+        walls.debug = true;
         walls.resizeWorld();
 
         //sets the platforms layer to all be colliders
