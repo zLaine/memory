@@ -5,7 +5,7 @@ window.onload = function()
     var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update} );
     
     var girl;
-    var walkSpeed = 170;
+    var walkSpeed = 200;
     var reunited;
     var map;
     var map2;
