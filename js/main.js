@@ -33,8 +33,8 @@ window.onload = function()
         game.physics.startSystem(Phaser.Physics.ARCADE);
         
         //setting up the images used in the tilemap
-        map = game.add.tilemap('map');
         map2 = game.add.tilemap('map');
+        map = game.add.tilemap('map');
     //    map3 = game.add.tilemap('map');
         map.addTilesetImage('apartment', 'apartment');
         map.addTilesetImage('bw boxes', 'boxes');
@@ -46,17 +46,15 @@ window.onload = function()
         map.setCollision(0); */
         
         //sets up the layers of the filemap
-        background = map.createLayer('Background');
-        background.resizeWorld();
         walls = map2.createLayer('Walls');
         //This debug code makes the colliders green
     //    platforms.debug = true;
         walls.resizeWorld();
-    //    collision = map3.createLayer('Collision');
-    //    collision.resizeWorld(); */
-        
+
         //sets the platforms layer to all be colliders
         map2.setCollisionBetween(0, 2, true, 'Walls');
+        background = map.createLayer('Background');
+        background.resizeWorld();
         
         reunited = game.add.audio('reunited');
         reunited.loop = true;
@@ -114,13 +112,13 @@ window.onload = function()
         else if(game.input.keyboard.isDown(Phaser.Keyboard.UP))
         {
             //  Move down
-            girl.y++;
+            girl.y--;
             girl.animations.play('down');
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
         {
             //  Move up
-            girl.y--;
+            girl.y++;
             girl.animations.play('up');
         }
         else
