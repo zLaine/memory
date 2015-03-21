@@ -94,6 +94,7 @@ window.onload = function()
         
         // girl.body.gravity.y = 300; 
         girl.body.velocity.x = 0;
+        girl.body.velocity.y = 0;
          
          
         if(game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
