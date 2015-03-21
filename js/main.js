@@ -113,13 +113,13 @@ window.onload = function()
         {
             //  Move down
             girl.y--;
-            girl.animations.play('down');
+            girl.animations.play('up');
         }
         else if(game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
         {
             //  Move up
             girl.y++;
-            girl.animations.play('up');
+            girl.animations.play('down');
         }
         else
         {
