@@ -62,7 +62,7 @@ window.onload = function()
         background = map.createLayer('Background');
         background.resizeWorld();
         
-        phoneRing = game.add.sprite(100, (game.world.height - 280), 'boxTrigger');
+        phoneRing = game.add.sprite(200, (game.world.height - 360), 'boxTrigger');
     //    whichBedroom;
     //    phoneAnswer;
         
