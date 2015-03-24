@@ -2,7 +2,7 @@ window.onload = function()
 {
     "use strict";
     
-    var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update} );
+    var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update});
     
     var girl;
     var walkSpeed = 200;
@@ -62,7 +62,7 @@ window.onload = function()
         background = map.createLayer('Background');
         background.resizeWorld();
         
-        phoneRing = game.add.sprite(200, (game.world.height - 360), 'boxTrigger');
+        phoneRing = game.add.sprite(360, (game.world.height - 400), 'boxTrigger');
     //    whichBedroom;
     //    phoneAnswer;
         
