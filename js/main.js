@@ -29,7 +29,7 @@ window.onload = function()
     function preload() 
     {
         game.load.spritesheet('girlChar', 'assets/ExGirl.png', 40, 40, 12 );
-        game.load.image('boxTrigger', 'assets/phoneRingTest.png');
+        game.load.image('boxTrigger', 'assets/phoneRing.png');
         game.load.image('boxes', 'assets/bw boxes.png');
         game.load.image('apartment', 'assets/apartment.png');
         game.load.tilemap('map', 'assets/floorPlan.json', null, Phaser.Tilemap.TILED_JSON);
