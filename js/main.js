@@ -63,7 +63,7 @@ window.onload = function()
         background.resizeWorld();
         
         phoneRing = game.add.sprite(400, (game.world.height - 400), 'boxTrigger');
-        whichBedroom = game.add.sprite(480, (game.world.height - 1040), 'boxTrigger');
+        whichBedroom = game.add.sprite(480, (game.world.height - 800), 'boxTrigger');
         whichBedroom.scale.set(5);
     //    phoneAnswer;
         
