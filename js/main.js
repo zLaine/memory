@@ -15,10 +15,21 @@ window.onload = function()
     var boxes;
     var collision;
     
+    var phoneRing;
+    var whichBedroom;
+    var phoneAnswer;
+    
+    var phoneRingDone = false;
+    var whichBedroomDone = false;
+    var phoneAnswerDone = false;
+    
+    var story;
+    var style;
+    
     function preload() 
     {
         game.load.spritesheet('girlChar', 'assets/ExGirl.png', 40, 40, 12 );
-    //    game.load.image('plainBrick', 'assets/brickPlatform.png');
+        game.load.image('boxTrigger', 'assets/phoneRingTest.png');
         game.load.image('boxes', 'assets/bw boxes.png');
         game.load.image('apartment', 'assets/apartment.png');
         game.load.tilemap('map', 'assets/floorPlan.json', null, Phaser.Tilemap.TILED_JSON);
@@ -40,11 +51,6 @@ window.onload = function()
         map.addTilesetImage('bw boxes', 'boxes');
         map2.addTilesetImage('bw boxes', 'boxes');
         
-       /* map.setCollisionBetween(0, 8);
-        map.setCollisionBetween(20, 25);
-        map.setCollisionBetween(27, 29);
-        map.setCollision(0); */
-        
         //sets up the layers of the filemap
         walls = map2.createLayer('Walls');
         //This debug code makes the colliders green
@@ -56,9 +62,15 @@ window.onload = function()
         background = map.createLayer('Background');
         background.resizeWorld();
         
+        phoneRing = game.add.sprite(1200, (game.world.height - 280), 'boxTrigger');
+    //    whichBedroom;
+    //    phoneAnswer;
+        
+        
         reunited = game.add.audio('reunited');
         reunited.loop = true;
-    //    reunited.play();
+        reunited.volume = .5;
+        reunited.play();
 
         
         girl = game.add.sprite(165, 100, 'girlChar');
